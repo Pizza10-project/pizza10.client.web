@@ -6,7 +6,7 @@ export const Footer = () => {
         <Container as="footer" height="120px">
             <Divider />
 
-            <Flex gap="24px" justifyContent="center" my="24px">
+            <Flex gap="24px" justifyContent="center" my="24px" flexWrap={["wrap", "nowrap"]}>
                 <Flex as={Link} href={"https://wa.me/1334725579"} isExternal alignItems="center">
                     <Phone size={20} />
                     <Text align="center" fontWeight="bold"> (13) 3472-5579</Text>

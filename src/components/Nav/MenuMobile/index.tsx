@@ -8,13 +8,15 @@ export const MenuMobile = () => {
     return (
         <Container
             width="100%"
-            px={"10px"}
+            px={["24px", "10px"]}
             display={["flex", "none"]}
             as="nav"
         >
-            <Flex w="100%" py="24px" justifyContent="space-between"
+            <Flex w="100%" py={["16px", "24px"]} justifyContent="space-between"
                 alignItems="center">
-                <Logo height={50} width={50} />
+                <Button variant="link" onClick={() => router.push("/")}>
+                    <Logo height={50} width={50} />
+                </Button>
                 <Button
                     variant="solid"
                     colorScheme="primary"

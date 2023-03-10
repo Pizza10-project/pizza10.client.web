@@ -4,8 +4,8 @@ interface PizzaCardInterface {
     imageSrc: string
     name: string
     description: string
-    price: string
-    id: string
+    price: string | number
+    id: number | string
 }
 
 
