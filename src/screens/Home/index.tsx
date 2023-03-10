@@ -1,8 +1,13 @@
-import { Box, Button, Container, Flex, Heading, Text, Image, Highlight } from '@chakra-ui/react'
+import {
+    Container
+} from '@chakra-ui/react'
+
 
 import { Header } from '../../components/HeaderDescription'
 import { NavBar } from '../../components/Nav'
-import { BannerSection } from './components/banner'
+import { BannerSection } from './Sections/Banner'
+import { DescriptionSection } from './Sections/Description'
+import { PizzaListSection } from './Sections/PizzaList'
 
 export const HomeScreen = () => {
     return (
@@ -10,6 +15,8 @@ export const HomeScreen = () => {
             <Header description='Peça rápido, aprecie lentamente.' title="Pizza 10 - Rápida e deliciosa" />
             <NavBar />
             <BannerSection />
+            <PizzaListSection />
+            <DescriptionSection />
 
         </Container >
     )

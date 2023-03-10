@@ -7,13 +7,13 @@ export const BannerSection = () => {
             border="2px solid"
             borderColor="primary.800"
             boxShadow='2px -2px 24px 0px rgba(214,52,71,0.75);'
-            h={["480px", "460px"]}
+            h={["480px", "560px"]}
             gap="80px"
             borderRadius="24px">
             <Box w="40%" display={["none", "flex"]}>
                 <Image src="/entregador.png" backgroundSize='cover' alt="" />
             </Box>
-            <Box w={["100%", "60%"]} letterSpacing={['widest', "wide"]} p={["24px", "32px"]}>
+            <Box w={["100%", "45%"]} letterSpacing={['widest', "wide"]} p={["24px", "32px"]}>
                 <Flex
                     backgroundColor="primary.100"
                     justifyContent="center"
@@ -21,9 +21,10 @@ export const BannerSection = () => {
                     display={["none", "flex"]}
                     p="12px"
                     borderRadius="12px"
-                > ELEITO O MELHOR DELIVERY  DE SÃO PAULO! </Flex>
+                > ELEITO O MELHOR DELIVERY  DE SÃO PAULO!
+                </Flex>
 
-                <Heading fontSize="5xl" color="white" my="24px">
+                <Heading fontSize="5xl" color="white" my="32px">
                     <Highlight
                         query="lentamente"
                         styles={{ color: 'primary.500' }}>
@@ -33,7 +34,7 @@ export const BannerSection = () => {
 
                 <Text
                     fontSize="18px"
-                    my="18px"
+                    my="24px"
                     color="white"
                 >Pizzas com massa feita na hora, assada na pedra no forno a lenha!</Text>
 
@@ -41,7 +42,7 @@ export const BannerSection = () => {
                     variant="solid"
                     size="lg"
                     borderRadius="24px"
-                    my="12px"
+                    mt="18px"
                     px={["95px", "40px"]}
                     color="primary.900"
                     _hover={{ backgroundColor: "primary.600", color: "primary.900" }}

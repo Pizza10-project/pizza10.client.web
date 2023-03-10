@@ -1,5 +1,5 @@
 import { Button, Container, Flex } from "@chakra-ui/react"
-import Logo from "../../../assets/icon/Logo"
+import Logo from "../../../assets/icon/logo.icon"
 
 export const MenuMobile = () => {
     return (
