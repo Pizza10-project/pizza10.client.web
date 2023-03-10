@@ -1,14 +1,18 @@
-import { Box, Img, Text } from "@chakra-ui/react"
+import { Box, Img, Link, Text } from "@chakra-ui/react"
+import { useRouter } from "next/router"
 
 interface PizzaCardInterface {
     imageSrc: string
     name: string
     description: string
     price: string
+    id: string
 }
 
 
-export const PizzaCard = ({ description, imageSrc, name, price }: PizzaCardInterface) => {
+export const PizzaCard = ({ description, imageSrc, name, price, id }: PizzaCardInterface) => {
+    const router = useRouter()
+
     return (
         <Box
             minW="240px"
@@ -16,6 +20,8 @@ export const PizzaCard = ({ description, imageSrc, name, price }: PizzaCardInter
             borderWidth='1px'
             borderRadius='24px'
             overflow='hidden'
+            as={Link}
+            href={`/menu/${id}`}
 
         >
             <Img

@@ -1,6 +1,9 @@
-import { Box, Button, Flex, Heading, Text, Image, Highlight } from '@chakra-ui/react'
+import { Box, Button, Flex, Heading, Text, Image, Highlight, Link } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
 
 export const BannerSection = () => {
+    const router = useRouter()
+
     return (
         <Flex backgroundColor="primary.950"
             alignItems={["baseline", 'center']}
@@ -47,6 +50,7 @@ export const BannerSection = () => {
                     color="primary.900"
                     _hover={{ backgroundColor: "primary.600", color: "primary.900" }}
                     backgroundColor="primary.500"
+                    onClick={() => router.push("/menu")}
 
                 >Pedir Agora</Button>
             </Box>

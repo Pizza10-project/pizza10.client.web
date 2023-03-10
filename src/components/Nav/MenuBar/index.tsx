@@ -1,30 +1,32 @@
 import { Button, Flex, Link } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import Logo from "../../../assets/icon/logo.icon";
 
 
 export const MenuBar = () => {
+  const router = useRouter()
+
   return (
     <Flex
       width="100%"
       justifyContent="space-between"
       alignItems="center"
-
+      px="180px"
       py="20px"
       marginTop={["24px", "0"]}
       display={["none", "flex"]}
       as="nav"
     >
-      <Link href={"/"}>
+      <Button variant="link" onClick={() => router.push("/")}>
         <Logo width={50} height={50} />
-      </Link>
+      </Button>
       <Flex justifyContent="flex-end" alignItems="center">
 
         <Button
           variant="link"
           colorScheme="white"
           mr="50px"
-          as={Link}
-          href={"/"}
+          onClick={() => router.push("/")}
         >
           Carpádio
         </Button>
@@ -36,8 +38,7 @@ export const MenuBar = () => {
           color="white"
           p="24px 32px"
           borderRadius={"30px"}
-          as={Link}
-          href={"/"}
+          onClick={() => router.push("/menu")}
         >
           Peça online
         </Button>
