@@ -1,7 +1,5 @@
 import { Button, Flex, Link } from "@chakra-ui/react";
-import Logo from "../../../icon/Logo";
-
-import { DropDownMenu } from "./dropdownMenu";
+import Logo from "../../../assets/icon/Logo";
 
 export const MenuBar = () => {
   return (
