@@ -1,7 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 
 import { black } from './colors/black'
-import { cyan } from './colors/cyan'
+
 import { green } from './colors/green'
 import { gray } from './colors/gray'
 import { primary } from './colors/primary'
@@ -15,9 +15,7 @@ import { Checkbox } from "./components/Checkbox";
 export const theme = extendTheme({
   colors: {
     primary,
-
     black,
-    cyan,
     gray,
     green,
     red,

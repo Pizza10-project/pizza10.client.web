@@ -30,9 +30,13 @@ export const MenuBar = () => {
           Carpádio
         </Button>
         <Button
-          variant="link"
-          colorScheme="white"
+          variant="solid"
+          backgroundColor="primary.700"
+          _hover={{ backgroundColor: "primary.500" }}
           mr="50px"
+          color="white"
+          p="24px 32px"
+          borderRadius={"30px"}
           as={Link}
           href={"/"}
         >

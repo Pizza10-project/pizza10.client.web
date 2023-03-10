@@ -1,5 +1,5 @@
 export const primary = {
-  50: '#fffae8',
+  50: '#FEF2F2',
   100: '#fff5d0',
   200: '#ffeba1',
   300: '#fee070',
@@ -9,4 +9,5 @@ export const primary = {
   700: '#F2911B',
   800: '#F25C05',
   900: '#D63447',
+  950: "#F21905",
 }
