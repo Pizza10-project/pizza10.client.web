@@ -1,5 +1,4 @@
 import { Box, Img, Link, Text } from "@chakra-ui/react"
-import { useRouter } from "next/router"
 
 interface PizzaCardInterface {
     imageSrc: string
@@ -11,7 +10,6 @@ interface PizzaCardInterface {
 
 
 export const PizzaCard = ({ description, imageSrc, name, price, id }: PizzaCardInterface) => {
-    const router = useRouter()
 
     return (
         <Box
