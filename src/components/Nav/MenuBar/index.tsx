@@ -23,18 +23,11 @@ export const MenuBar = () => {
       <Flex justifyContent="flex-end" alignItems="center">
 
         <Button
-          variant="link"
-          colorScheme="white"
-          mr="50px"
-          onClick={() => router.push("/")}
-        >
-          Carpádio
-        </Button>
-        <Button
           variant="solid"
           backgroundColor="primary.700"
           _hover={{ backgroundColor: "primary.500" }}
           mr="50px"
+          letterSpacing={"widest"}
           color="white"
           p="24px 32px"
           borderRadius={"30px"}

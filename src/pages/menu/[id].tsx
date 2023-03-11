@@ -3,10 +3,10 @@ import type { NextPage } from 'next'
 import { MenuScreen } from '../../screens/Menu'
 
 
-const Menu: NextPage = () => {
+const MenuId: NextPage = () => {
   return (
     <MenuScreen />
   )
 }
 
-export default Menu
+export default MenuId

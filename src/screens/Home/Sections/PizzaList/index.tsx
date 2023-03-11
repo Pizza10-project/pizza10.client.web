@@ -3,6 +3,7 @@ import { PizzaCard } from "../../../../components/PizzaCard"
 import { Plus } from "phosphor-react"
 import { useRouter } from "next/router"
 import { pizzas } from "../../../../data/pizzas"
+import { formatMoney } from "../../../../utils/formatMoney"
 
 export const PizzaListSection = () => {
     const router = useRouter()
@@ -18,7 +19,7 @@ export const PizzaListSection = () => {
                         name={pizza.name}
                         description={pizza.description}
                         imageSrc={pizza.imageSrc}
-                        price={pizza.price}
+                        price={formatMoney(pizza.price)}
                     />
                 ))}
                 <Button

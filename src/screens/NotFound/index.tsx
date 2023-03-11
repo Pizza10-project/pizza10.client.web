@@ -1,11 +1,13 @@
 import { Box, Button, Container, Flex, Highlight, Img, Stack, Text } from "@chakra-ui/react"
 import { useRouter } from "next/router"
+import { Header } from "../../components/HeaderDescription"
 
 export const NotFoundScreen = () => {
     const router = useRouter()
 
     return (
         <Container>
+            <Header description='Sua página não foi encontrada' title="Página não encontrada" />
             <Flex px="40px" w="100%" alignItems="center">
                 <Img src="/frustado.png" alt="" />
 
