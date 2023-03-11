@@ -29,7 +29,7 @@ export const MenuScreen = () => {
                 >
                     <Heading fontSize={["2xl", "5xl"]}> Pizza de Portuguesa</Heading>
                     <Text fontSize={["lg", "2xl"]}>Pizza feito com Molho de tomate, presunto, mozzarella, ovos, cebolla e azeitonas</Text>
-                    <Text letterSpacing={"widest"} fontSize="2xl">R$ 19.90</Text>
+                    <Text letterSpacing={"widest"} fontSize="5xl">R$ 19.90</Text>
                     <Flex gap="24px" w="100%">
                         <Button
                             variant="solid"

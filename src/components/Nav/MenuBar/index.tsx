@@ -1,5 +1,6 @@
-import { Button, Flex, Link } from "@chakra-ui/react";
+import { Button, Flex, } from "@chakra-ui/react";
 import { useRouter } from "next/router";
+import { ShoppingCart } from "phosphor-react";
 import Logo from "../../../assets/icon/logo.icon";
 
 
@@ -11,7 +12,7 @@ export const MenuBar = () => {
       width="100%"
       justifyContent="space-between"
       alignItems="center"
-      px="180px"
+      px="90px"
       py="20px"
       marginTop={["24px", "0"]}
       display={["none", "flex"]}
@@ -26,14 +27,14 @@ export const MenuBar = () => {
           variant="solid"
           backgroundColor="primary.700"
           _hover={{ backgroundColor: "primary.500" }}
-          mr="50px"
           letterSpacing={"widest"}
           color="white"
-          p="24px 32px"
+          p="24px 24px"
           borderRadius={"30px"}
           onClick={() => router.push("/menu")}
+          leftIcon={<ShoppingCart size={32} />}
         >
-          Peça online
+          Seu(s) pedido(s)
         </Button>
       </Flex>
     </Flex>
