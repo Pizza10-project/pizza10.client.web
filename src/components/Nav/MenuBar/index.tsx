@@ -34,7 +34,7 @@ export const MenuBar = () => {
           onClick={() => router.push("/menu")}
           leftIcon={<ShoppingCart size={32} />}
         >
-          Seu(s) pedido(s)
+         Veja Seu(s) pedido(s)
         </Button>
       </Flex>
     </Flex>
