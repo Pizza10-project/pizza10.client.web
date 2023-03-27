@@ -4,7 +4,7 @@ import { MenuMobile } from "./MenuMobile"
 
 export const NavBar = () => {
     return (
-        <Container minWidth="100%" p={0}>
+        <Container minWidth="100%">
             <MenuBar />
             <MenuMobile />
         </Container>

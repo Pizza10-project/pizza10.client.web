@@ -1,6 +1,6 @@
 import { Button, Flex, } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { ShoppingCart } from "phosphor-react";
+import { ShoppingCartSimple } from "phosphor-react";
 import Logo from "../../../assets/icon/logo.icon";
 
 
@@ -12,7 +12,6 @@ export const MenuBar = () => {
       width="100%"
       justifyContent="space-between"
       alignItems="center"
-      px="90px"
       py="20px"
       marginTop={["24px", "0"]}
       display={["none", "flex"]}
@@ -25,16 +24,17 @@ export const MenuBar = () => {
 
         <Button
           variant="solid"
-          backgroundColor="primary.700"
-          _hover={{ backgroundColor: "primary.500" }}
-          letterSpacing={"widest"}
-          color="white"
+          colorScheme="orange"
+          // backgroundColor="primary.700"
+          // _hover={{ backgroundColor: "primary.500" }}
+          // letterSpacing={"widest"}
+          // color="white"
           p="24px 24px"
           borderRadius={"30px"}
           onClick={() => router.push("/menu")}
-          leftIcon={<ShoppingCart size={32} />}
+        // leftIcon={}
         >
-         Veja Seu(s) pedido(s)
+          <ShoppingCartSimple size={20} weight="light" />
         </Button>
       </Flex>
     </Flex>

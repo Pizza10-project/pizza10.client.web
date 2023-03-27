@@ -10,7 +10,7 @@ import { PizzaListSection } from './Sections/PizzaList'
 
 export const HomeScreen = () => {
     return (
-        <Container p="20px">
+        <Container>
             <Header description='Peça rápido, aprecie lentamente.' title="Pizza 10 - Rápida e deliciosa" />
             <BannerSection />
             <PizzaListSection />
