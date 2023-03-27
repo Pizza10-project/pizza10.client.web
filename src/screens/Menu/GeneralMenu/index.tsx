@@ -2,9 +2,10 @@ import { Box, Container, Flex, Heading, Text } from "@chakra-ui/react"
 import { Header } from "../../../components/HeaderDescription"
 import { PizzaCard } from "../../../components/PizzaCard"
 import { pizzas } from "../../../data/pizzas"
+import { MenuInterface } from "../../../models/interfaces/general/menu.interface"
 import { formatMoney } from "../../../utils/formatMoney"
 
-export const GeneralMenuScreen = () => {
+export const GeneralMenuScreen = ({ pizzas }: MenuInterface) => {
     return (
         <Container>
             <Header description='Veja todo o carpádio aqui' title="Pizza 10 | Carpádio" />
@@ -17,8 +18,8 @@ export const GeneralMenuScreen = () => {
                         id={pizza.id}
                         name={pizza.name}
                         description={pizza.description}
-                        imageSrc={pizza.imageSrc}
-                        price={formatMoney(pizza.price)}
+                        imageSrc={pizza.imageUrl || ""}
+                        price={pizza.price}
                     />
                 ))}
             </Flex>
