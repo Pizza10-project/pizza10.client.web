@@ -14,13 +14,33 @@ Final de dia depois de um dia corrido, o máximo que queremos é uma pizza bem g
 
 ## Tecnologias utilizadas
 
-- [Typescript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
 - [ReactJS](https://pt-br.reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
 - [ChakraUI](https://chakra-ui.com/)
+- [Stripe](https://stripe.com/)
+- [Husky](https://www.npmjs.com/package/husky)
+- [Phospor Icon](https://phosphoricons.com/)
+- [Axios](https://axios-http.com/ptbr/docs/intro)
+- [Commitizen](https://github.com/commitizen/cz-cli)
+- [ESlint](https://eslint.org/)
+
+
+## **🔖** Layout desenvolvido
+
+Você pode visualizar o deploy do projeto através do link abaixo:
+
+- [Deploy](https://coffee-delivery-self.vercel.app/)
 
 ## **🚀** Como Executar
 
-Como o repositório e siga o passo a passo de cada stack.
+Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
+
+- [Git](https://git-scm.com/)
+- [NodeJS](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/)
+
+Segue os comandos para baixar e executar o projeto na sua máquina:
 
 ```bash
 ## Clone o projeto em sua máquina
